@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_background">
+
+    <ImageView
+        android:id="@+id/iv_meal_image"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_margin="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_ad_2" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/TitleTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_meal_image"
+        app:layout_constraintTop_toTopOf="@+id/iv_meal_image"
+        tools:text="Title title" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        style="@style/TitleTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_meal_image"
+        app:layout_constraintTop_toTopOf="@+id/iv_meal_image"
+        tools:text="Title title" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_coast"
+        style="@style/CoastTextStyle"
+        android:layout_width="97dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_coast_background"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_meal_image"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
